@@ -1,0 +1,35 @@
+[
+    {
+        "degree": "Licenciatura en Administración",
+        "college": "Universidad de la Defensa Nacional",
+        "keyboards": ["contabilidad", "finanzas", "administracion", "gestion"],
+        "status": "En curso",
+        "start": "2019",
+        "finish": "2024",
+        "certificate": null,
+        "link": null,
+        "description": null
+    },
+    {
+        "degree": "Programación en Python",
+        "college": "Plataforma Coderhouse",
+        "keyboards": ["programación", "pyhton", "postgresql", "django"],
+        "status": "Finalizado",
+        "start": "2003",
+        "finish": "2015",
+        "certificate": null,
+        "link": null,
+        "description": null
+    },
+    {
+        "degree": "Bachiller en Economía y Gestión",
+        "college": "Colegio Salesiano Pio X",
+        "keyboards": ["contabilidad", "finanzas", "administracion", "gestion"],
+        "status": "Finalizado",
+        "start": "2003",
+        "finish": "2015",
+        "certificate": null,
+        "link": null,
+        "description": null
+    }
+]

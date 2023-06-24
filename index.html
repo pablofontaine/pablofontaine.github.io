@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="es" data-bs-theme="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pablo Fontaine - Sitio profesional personal</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body class="py-4">
+  <main>
+    <div class="container-fluid text-bg-danger text-center p-3 mb-3">
+      <p class="mb-1">Este sitio se encuentra bajo construcción y contiene errores. La información puede no ser real.</p>
+      <p class="mb-1">This site is under construction and has errors. The information may not be real.</p>
+    </div>
+    <div class="container-sm">
+
+      <div class="row align-items-center justify-content-center justify-content-md-between justify-content-xl-end mb-3">
+        <div class="col-auto d-none d-md-block">
+          <!-- Main tags -->
+          <p id="main-tags" class="small m-0 text-secondary"></p>
+        </div>
+        <div class="col-auto">
+          <button type="button" class="btn btn-sm btn-outline-light" style="display: none;" id="light-mode"
+            onclick="ChangeStyle('light')">
+            <i class="bi bi-brightness-high"></i> Modo claro
+          </button>
+          <button type="button" class="btn btn-sm btn-outline-dark" id="dark-mode" onclick="ChangeStyle('dark')">
+            <i class="bi bi-moon"></i> Modo oscuro</button>
+        </div>
+      </div>
+
+      <!-- Main -->
+      <div class="row align-items-center justify-content-center mb-sm-3 mb-0">
+
+        <div class="col-auto">
+          <!-- Profile picture -->
+          <img src="img/profile.jpeg" class="float-start rounded img-fluid" alt="Pablo Fontaine's picture">
+        </div>
+
+        <div class="col mt-3 mt-sm-0 text-center text-sm-start" style="min-width: 200px;">
+
+          <!-- Fullname -->
+          <h1 id="fullname"></h1>
+          <!-- Main title -->
+          <p class="lead" id="main-title"></p>
+          <!-- Linkedin profile -->
+          <p><i class="bi bi-linkedin"></i> <a class="link-offset-2 link-underline link-underline-opacity-25"
+              href="https://www.linkedin.com/in/pablofontaine/" id="url-linkedin">Mi perfil de Linkedin</a></p>
+
+        </div>
+      </div>
+
+      <!-- About me  -->
+      <div class="card mb-4" id="about-me">
+        <div class="card-header">
+          <a href="#about-me"
+            class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover">Sobre
+            mí</a>
+        </div>
+        <div class="card-body">
+          <p id="my-description"></p>
+        </div>
+      </div>
+
+      <div class="row align-items-start flex-column flex-lg-row mb-4">
+
+        <div class="col mb-sm-4" id="studies">
+
+          <h2 class="fs-4 mb-3">
+            <a href="#studies"
+              class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover">Estudios</a>
+          </h2>
+
+          <div class="list-group list-group-flush" id="list-studies">
+            <!-- List of studies, auto-inject -->
+
+          </div>
+        </div>
+
+        <div class="col mb-sm-4" id="experience">
+
+          <h2 class="fs-4 mb-3">
+            <a href="#experience"
+              class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover">Experiencia
+              laboral</a>
+          </h2>
+
+          <div class="list-group list-group-flush" id="list-jobs">
+            <!-- List of jobs, auto-inject -->
+          </div>
+
+        </div>
+      </div>
+
+      <h2 class="fs-4 mb-3" id="projects">
+        <a href="#projects"
+          class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover">Proyectos</a>
+      </h2>
+      <div class="row align-items-start flex-column flex-md-row mb-4">
+
+        <div class="col mb-4">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col mb-4">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col mb-4">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="row align-items-start flex-column flex-lg-row mb-4">
+
+        <div class="col mb-4" id="technology">
+          <h2 class="fs-4 mb-3">
+            <a href="#technology"
+              class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover">Tecnologías</a>
+          </h2>
+          <div class="list-group list-group-flush" id="list-technologies">
+            <!-- List of technologies, auto-inject -->
+          </div>
+        </div>
+
+        <div class="col mb-4" id="tools">
+          <h2 class="fs-4 mb-3">
+            <a href="#tools"
+              class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover">Herramientas
+              y programas</a>
+          </h2>
+          <div class="list-group list-group-flush" id="list-tools">
+            <!-- List of tools, auto-inject -->
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container-fluid align-items-center text-center">
+      <p class="text-secondary"><small>Pablo Fontaine - Copyright 2023 | Construido con Bootstrap 5</small></p>
+      <p>
+        <i class="bi bi-linkedin"></i> <a class="link-offset-2 link-underline link-underline-opacity-25"
+          href="https://www.linkedin.com/in/pablofontaine/"><small>Linkedin</small></a>
+        <i class="bi bi-github"></i> <a class="link-offset-2 link-underline link-underline-opacity-25"
+          href="https://github.com/pablofontaine/"><small>Github</small></a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Load Bootstrap 5 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+
+  <script>
+    const btnDark = document.getElementById("dark-mode");
+    const btnLight = document.getElementById("light-mode");
+    const htmlElement = document.getElementsByTagName("html")[0];
+
+    function ChangeStyle(theme) {
+      if (theme === "dark") {
+        htmlElement.setAttribute("data-bs-theme", "dark");
+        btnDark.style.display = 'none';
+        btnLight.style.display = 'inline-block';
+      } else if (theme === "light") {
+        htmlElement.setAttribute("data-bs-theme", "light");
+        btnDark.style.display = 'inline-block';
+        btnLight.style.display = 'none';
+      }
+    }
+  </script>
+  <script src="js/injection.js"></script>
+</body>
+
+</html>
