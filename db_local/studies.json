@@ -1,11 +1,11 @@
 [
     {
         "degree": "Licenciatura en Administración",
-        "college": "Universidad de la Defensa Nacional",
+        "college": "Instituto Universitario Aeronáutico",
         "keyboards": ["contabilidad", "finanzas", "administracion", "gestion"],
-        "status": "En curso",
+        "status": null,
         "start": "2019",
-        "finish": "2024",
+        "finish": "2024 (En curso)",
         "certificate": null,
         "link": null,
         "description": null
@@ -14,20 +14,20 @@
         "degree": "Programación en Python",
         "college": "Plataforma Coderhouse",
         "keyboards": ["programación", "pyhton", "postgresql", "django"],
-        "status": "Finalizado",
+        "status": null,
         "start": "2003",
-        "finish": "2015",
+        "finish": "2015 (Finalizado)",
         "certificate": null,
         "link": null,
-        "description": null
+        "description": "ID 638eb67bb52885000e0c9ead"
     },
     {
         "degree": "Bachiller en Economía y Gestión",
         "college": "Colegio Salesiano Pio X",
         "keyboards": ["contabilidad", "finanzas", "administracion", "gestion"],
-        "status": "Finalizado",
+        "status": null,
         "start": "2003",
-        "finish": "2015",
+        "finish": "2015 (Finalizado)",
         "certificate": null,
         "link": null,
         "description": null

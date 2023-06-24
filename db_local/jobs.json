@@ -1,35 +1,75 @@
 [
     {
-        "degree": "Licenciatura en Administración",
-        "college": "Universidad de la Defensa Nacional",
-        "keyboards": ["contabilidad", "finanzas", "administracion", "gestion"],
-        "status": "En curso",
-        "start": "2019",
-        "finish": "2024",
-        "certificate": null,
-        "link": null,
-        "description": null
+      "title": "Técnico de producción industrial",
+      "subtitle": "OZONIZER - Generadores de ozono",
+      "keyboards": ["producción", "servicio técnico", "gestión administrativa del área", "desarrollo de producto"],
+      "status": null,
+      "start": "marzo de 2020",
+      "finish": "julio de 2022",
+      "certificate": null,
+      "link": null,
+      "location": "Córdoba, Argentina",
+      "description": "Me desempeñé en el unidad de negocio industrial. Mis funciones fueron la producción de equipos industriales, Servicio Tecnico especializado en equipos de Ozono y Oxígeno y visitas técnicas a clientes. Gestión administrativa y operativa de órdenes de trabajo y gestión de stocks. Participación activa en reuniones de desarrollo de producto y procesos de fabricación. El primer año, estuve en el sector de fabricación de electrodomésticos. Considero un acierto haber realizado hojas de procesos de fabricación y aumento de cantidad mínima de stock de subconjuntos para ensamblaje, con el afán de profesionalizar la posterior capacitación y el rendimiento del área."
     },
     {
-        "degree": "Programación en Python",
-        "college": "Plataforma Coderhouse",
-        "keyboards": ["programación", "pyhton", "postgresql", "django"],
-        "status": "Finalizado",
-        "start": "2003",
-        "finish": "2015",
-        "certificate": null,
-        "link": null,
-        "description": null
+      "title": "Socio administrador",
+      "subtitle": "CopaRelampago",
+      "keyboards": ["administración financiera", "negociación", "emprendimiento", "proyección"],
+      "status": null,
+      "start": "agosto de 2016",
+      "finish": "julio de 2020",
+      "certificate": null,
+      "link": null,
+      "location": "Córdoba, Argentina",
+      "description": "Emprendimiento que nació como hobbie con amigos y se convirtió en un negocio con proyección creciente. Me retiré porque no coincidía con mis intereses personales. Dentro de las actividades críticas de funcionamiento, mi función principal era la administración financiera y la negociación en todas sus instancias (proveedores, clientes, afiliaciones-convenios y personal)."
     },
     {
-        "degree": "Bachiller en Economía y Gestión",
-        "college": "Colegio Salesiano Pio X",
-        "keyboards": ["contabilidad", "finanzas", "administracion", "gestion"],
-        "status": "Finalizado",
-        "start": "2003",
-        "finish": "2015",
-        "certificate": null,
-        "link": null,
-        "description": null
+      "title": "Servicios web y desarrollo de promoción",
+      "subtitle": "OZONIZER - Generadores de ozono",
+      "keyboards": ["servicios web", "desarrollo de promoción", "rediseño de página web", "diseño de stands"],
+      "status": null,
+      "start": "noviembre de 2018",
+      "finish": "octubre de 2019",
+      "certificate": null,
+      "link": null,
+      "location": "Córdoba, Argentina",
+      "description": "Trabajo part-time. Principalmente rediseñé y creé una nueva página web para la empresa, cambié algunos componentes de la identidad de marca y participé en el diseño y producción de stands de promoción."
+    },
+    {
+      "title": "Encargado general",
+      "subtitle": "EcoAgua",
+      "keyboards": ["encargado general", "programación de rutas", "gestión de compras", "estados de resultados"],
+      "status": null,
+      "start": "noviembre de 2017",
+      "finish": "marzo de 2019",
+      "certificate": null,
+      "link": null,
+      "location": "Córdoba, Argentina",
+      "description": "Luego, pasé a cumplir algunas funciones más. Programación de rutas semanales, gestión y ejecución de compras y realización de Estados de Resultados para la toma de decisiones. Relación con personal de cobranza."
+    },
+    {
+      "title": "Responsable de ruta",
+      "subtitle": "EcoAgua",
+      "keyboards": ["responsable de ruta", "repartidor de agua", "cobros", "relación con clientes"],
+      "status": null,
+      "start": "julio de 2017",
+      "finish": "octubre de 2017",
+      "certificate": null,
+      "link": null,
+      "location": "Córdoba, Argentina",
+      "description": "Trabajé como repartidor de agua y llenador. Fui responsable de la ruta de reparto y algunos cobros. Tenía a cargo dos vehículos y su mantenimiento para cumplir con los objetivos. Además, la relación con los clientes, de los cuales el 80% de los clientes eran medianas empresas."
+    },
+    {
+      "title": "Operador de producción",
+      "subtitle": "OZONIZER - Generadores de ozono",
+      "keyboards": ["operador de producción", "fabricación de electrodomésticos", "servicio técnico", "consumo masivo"],
+      "status": null,
+      "start": "julio de 2017",
+      "finish": "octubre de 2017",
+      "certificate": null,
+      "link": null,
+      "location": "Córdoba, Argentina",
+      "description": "Trabajo 100% operativo. Fabricación y servicio técnico de electrodomésticos para consumo masivo."
     }
-]
+  ]
+  
