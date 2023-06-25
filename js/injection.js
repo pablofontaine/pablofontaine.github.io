@@ -1,40 +1,47 @@
 document.addEventListener('DOMContentLoaded', injectContent());
 
-function createListItem(title, status, start, finish, where, description = null) {
-    const GlobalListItem = document.createElement('div');
-    GlobalListItem.className = 'list-group-item list-group-item-action flex-column align-items-start';
+function createListItem(
+    title = null,
+    subtitle = null,
+    start = null,
+    finish = null,
+    location = null,
+    description = null) {
 
-    const itemMainContainer = document.createElement('div');
-    itemMainContainer.className = 'd-flex w-100 justify-content-between';
+    const itemContainer = document.createElement('div');
+    itemContainer.className = 'list-group-item list-group-item-action align-items-start';
 
-    const itemTitle = document.createElement('h6');
+    const itemTitle = document.createElement('h5');
     itemTitle.className = 'mb-1';
     itemTitle.textContent = title;
 
-    const itemMainInfo = document.createElement('p');
-    itemMainInfo.className = 'mb-1';
-    itemMainInfo.textContent = `${start}-${finish} | ${where}`;
+    const itemSubtitle = document.createElement('p');
+    itemSubtitle.className = 'mb-0';
+    itemSubtitle.textContent = subtitle;
 
-    const itemBadgeStatus = document.createElement('span');
-    itemBadgeStatus.className = 'badge';
-    itemBadgeStatus.textContent = status;
-    itemBadgeStatus.classList.toggle('text-bg-primary', status === 'En curso');
-    itemBadgeStatus.classList.toggle('text-bg-success', status !== 'En curso');
+    const itemDates = document.createElement('p');
+    itemDates.className = 'mb-0';
+    itemDates.textContent = `${start}-${finish}`;
 
-    GlobalListItem.appendChild(itemMainContainer);
-    itemMainContainer.appendChild(itemTitle);
-    itemMainContainer.appendChild(itemBadgeStatus);
-    GlobalListItem.appendChild(itemMainInfo);
+    const itemLocation = document.createElement('p');
+    itemLocation.className = 'mb-1 text-secondary';
+    itemLocation.textContent = location;
+
+    itemContainer.appendChild(itemTitle);
+    itemContainer.appendChild(itemSubtitle);
+    itemContainer.appendChild(itemDates);
+    itemContainer.appendChild(itemLocation);
 
     if (description != null) {
-        const itemDescription = document.createElement('small');
-        itemDescription.className = 'text-muted';
+        const itemDescription = document.createElement('p');
+        itemDescription.className = 'small text-muted';
         itemDescription.textContent = description;
-        GlobalListItem.appendChild(itemDescription);
+        itemContainer.appendChild(itemDescription);
     }
 
-    return GlobalListItem;
+    return itemContainer;
 }
+
 
 function createToolOrTechnology(name, frequency_of_use = null, ability) {
 
@@ -90,8 +97,7 @@ function injectContent() {
 
             data.forEach(study => {
 
-                const studyListItem = createListItem(study.degree, study.status,
-                    study.start, study.finish, study.college, study.description);
+                const studyListItem = createListItem(study.degree, study.college, study.start, study.finish, study.description);
 
                 divStudies.appendChild(studyListItem);
             });
@@ -108,9 +114,8 @@ function injectContent() {
 
             data.forEach(job => {
 
-                const jobListItem = createListItem(job.degree, job.status,
-                    job.start, job.finish, job.college, job.description);
-
+                const jobListItem = createListItem(job.title, job.subtitle, job.start, job.finish, job.location, job.description
+                );
                 divStudies.appendChild(jobListItem);
             });
         })
@@ -152,8 +157,6 @@ function injectContent() {
             console.error('Error al cargar el archivo JSON (toolsData):', error);
         });
 
-
-
     // processProjects();
     console.log('¡Todo ha finalizado!');
 };
@@ -166,14 +169,14 @@ function processProfile(profileData) {
     const mainTags = document.getElementById('main-tags');
     const myDescription = document.getElementById('my-description');
 
-    fullName.innerHTML = profileData.fullname;
-    mainTitle.innerHTML = profileData.main_title;
+    fullName.textContent = profileData.fullname;
+    mainTitle.textContent = profileData.main_title;
     urlLinkedin.href = profileData.links.url_linkedin;
     profileData.tags.forEach(element => {
         mainTags.innerHTML += '<span>#' + element + '</span> ';
 
     });
-    myDescription.innerHTML = profileData.my_description;
+    myDescription.textContent = profileData.my_description;
 }
 
 // function processProjects() {

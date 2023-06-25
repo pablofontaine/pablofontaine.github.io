@@ -2,12 +2,12 @@
     {
       "title": "Python 3 (con algunas librerias)",
       "frequency_of_use": null,
-      "ability": "Hice algunos proyectos y scripts personales con Python. Entiendo perfectamente la teoría y también usé algunas librerías como MatplotLib o Numpy. He superado todos los desafíos que se pueden encontrar en línea. También hice un algoritmo que intenta encontrar todas las condiciones posibles para un vector de tamaño X y que cumpla ciertas condiciones. Estoy estudiando patrones de diseño del libro Design Patterns."
+      "ability": null
     },
     {
       "title": "Django Framework",
       "frequency_of_use": null,
-      "ability": "Hice más de un proyecto personal con Django. Entiendo muy bien el Modelo-Vista-Controlador y su estructura de apps. He creado con éxito formularios con su validación, y múltiples CRUD para diferentes usos. También pude crear algunas funciones más complejas, como proyecciones financieras hacia adelante y hacia atras, o algunos algoritmos. También pude lograr pasar vistas complejas basadas en clases a vistas basadas en funciones según el grado de complejidad o la cantidad de modelos requeridos para una vista."
+      "ability": null
     },
     {
       "title": "Bootstrap 5",
@@ -17,16 +17,16 @@
     {
       "title": "CSS y HTML",
       "frequency_of_use": null,
-      "ability": "Entiendo perfectamente como funciona el HTML y sus estilos. No deseo ser front-end, conozco lo fundamental y como se interelaciona."
+      "ability": null
     },
     {
       "title": "PostgreSQL",
       "frequency_of_use": null,
-      "ability": "Se realizar consultas (no muy complejas) para solicitar datos. Si bien casi siempre usé el ORM de Django por su velocidad, para trabajar con la interfaz de PostgreSQL y poder validar operaciones del backend para observar en tiempo real, debí realizar gran cantidad de consultas usando SQL."
+      "ability": null
     },
     {
       "title": "Javascript",
       "frequency_of_use": null,
-      "ability": "Estudie JS hace unos años. No lo seguí por razones personales, aunque toda esta web está siendo transformada/renderizada/inyectada por con código JS. Conozco los fundamentos, aunque no conozco toda la sintáxis de JS. Javascript es un lenguaje profundo y yo no deseo ser experto en JS."
+      "ability": null
     }
 ]  

@@ -5,6 +5,7 @@ package-lock.json
 package.json
 *.drawio
 dataflow.drawio
+*.txt
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
