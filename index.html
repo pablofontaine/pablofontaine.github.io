@@ -102,14 +102,16 @@
         <a href="#projects"
         class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover">Proyectos</a>
       </h2>
+      <img src="./img/proyect_1_main_img.jpg" class="img-fluid" alt="...">
 
+      
       <div class="row align-items-start flex-column flex-md-row">
 
         <div class="col mb-4">
           <div class="card mb-3" style="max-width: 540px;">
             <div class="row g-0">
               <div class="col-md-4">
-                <img src="" class="img-fluid rounded-start" alt="...">
+                <img src="./img/proyect_1_main_img.jpg" class="img-fluid rounded-start" alt="...">
               </div>
               <div class="col-md-8">
                 <div class="card-body">
@@ -226,6 +228,18 @@
         htmlElement.setAttribute("data-bs-theme", "light");
         btnDark.style.display = 'inline-block';
         btnLight.style.display = 'none';
+      }
+    }
+  </script>
+  <script>
+    function toggleDescription(jobId) {
+      var description = document.getElementById("job-description-" + jobId);
+      if (description.classList.contains("d-none")) {
+        description.classList.remove("d-none");
+        description.classList.add("d-block");
+      } else {
+        description.classList.remove("d-block");
+        description.classList.add("d-none");
       }
     }
   </script>

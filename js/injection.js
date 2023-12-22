@@ -6,10 +6,12 @@ function createListItem(
     start = null,
     finish = null,
     location = null,
-    description = null) {
+    description = null,
+    lap = 1) {
 
     const itemContainer = document.createElement('div');
-    itemContainer.className = 'list-group-item list-group-item-action align-items-start';
+    itemContainer.className = 'list-group-item list-group-item-action align-items-start clickable';
+    itemContainer.onclick = toggleDescription;
 
     const itemTitle = document.createElement('h5');
     itemTitle.className = 'mb-1';
@@ -34,8 +36,9 @@ function createListItem(
 
     if (description != null) {
         const itemDescription = document.createElement('p');
-        itemDescription.className = 'small text-muted';
+        itemDescription.className = 'small text-muted d-none';
         itemDescription.textContent = description;
+        itemDescription.id = 'job-description-' + lap;
         itemContainer.appendChild(itemDescription);
     }
 
@@ -107,16 +110,17 @@ function injectContent() {
         });
 
     // Load jobs data
-    fetch('./../db_local/jobs.json')
+        fetch('./../db_local/jobs.json')
         .then(response => response.json())
         .then(data => {
             const divStudies = document.getElementById('list-jobs');
+            let lap = 1;
 
             data.forEach(job => {
-
-                const jobListItem = createListItem(job.title, job.subtitle, job.start, job.finish, job.location, job.description
-                );
+                const jobListItem = createListItem(job.title, job.subtitle, job.start, job.finish, job.location, job.description, lap);
+                
                 divStudies.appendChild(jobListItem);
+                lap++; 
             });
         })
         .catch(error => {
