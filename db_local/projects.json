@@ -1,0 +1,23 @@
+[
+    {
+        "main_img": "./../img/proyect_1_main_img.jpg",
+        "title": "Generador de curriculum personal dinámico para Github",
+        "technology_tags": ["HTML", "CSS", "Bootstrap 5", "Javascript"],
+        "short_description": null,
+        "aditional_images": [],
+        "url_repository": "https://github.com/pablofontaine/pablofontaine.github.io",
+        "url_live_view": "https://pablofontaine.github.io/",
+        "authors": ["Pablo Fontaine"]
+    },
+    {
+        "main_img": null,
+        "title": "Plataforma de administración de actividades personales",
+        "technology_tags": ["Python", "Django", "PostgreSQL", "HTML", "CSS", "Bootstrap 5"],
+        "short_description": null,
+        "aditional_images": [],
+        "url_repository": "",
+        "url_live_view": "",
+        "authors": ["Pablo Fontaine"]
+    }
+
+]
